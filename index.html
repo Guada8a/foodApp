@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><i class="fas fa-utensils"></i> Food App</div>
+            <ul>
+                <li><a href="#home"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="#categories"><i class="fas fa-th"></i> Categorías</a></li>
+                <li><a href="#menu"><i class="fas fa-utensils"></i> Menú</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <div class="carousel">
+                <div class="carousel-inner"></div>
+                <button class="carousel-prev" type="button" title="Previous"><i class="fas fa-chevron-left"></i></button>
+                <button class="carousel-next" type="button" title="Next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </section>
+        <section id="categories">
+            <h2>Categorías</h2>
+            <div class="categories"></div>
+        </section>
+        <section id="menu">
+            <h2>Menú</h2>
+            <div class="food-items"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Food App. Todos los derechos reservados.</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
