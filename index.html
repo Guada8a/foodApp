@@ -81,10 +81,13 @@ nav ul li a {
     font-weight: 600;
     transition: color 0.3s;
     font-size: 1.1rem;
+    padding: 5px 10px;
 }
 
 nav ul li a:hover {
+    background-color: rgba(255, 255, 255);
     color: var(--secondary-color);
+    border-radius: 5px;
 }
 
 main {
@@ -170,9 +173,11 @@ h2 {
 .category {
     flex: 0 0 auto;
     width: calc(20% - 30px);
+    height: 200px;
     border-radius: 15px;
     position: relative;
-    border-radius: 50%;
+    border-radius: 15px;
+    cursor: pointer;
     overflow: hidden;
     transition: all 0.3s;
     box-shadow: var(--shadow);
@@ -230,15 +235,18 @@ h2 {
 }
 
 .food-item {
-    flex: 0 1 calc(25% - 30px);
-    border-radius: 15px;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
     padding: 20px;
-    text-align: center;
-    transition: all 0.3s;
-    background-color: var(--card-bg);
+    margin: 0 auto 30px;
+    border-radius: 10px;
     box-shadow: var(--shadow);
-    position: relative;
     overflow: hidden;
+    transition: transform 0.3s;
+    background-color: var(--card-bg);
+    position: relative;
+    cursor: pointer;
 }
 
 .food-item:hover {
@@ -283,11 +291,11 @@ footer {
 
 @media (max-width: 1024px) {
     .food-item {
-        flex: 0 1 calc(33.33% - 30px);
+        flex: 0 1 calc(33.333% - 30px);
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .carousel-inner {
         height: 300px;
     }
@@ -297,9 +305,13 @@ footer {
     }
 
     .category {
-        width: calc(50% - 15px);
+        width: calc(25% - 30px);
         height: auto;
         aspect-ratio: 1 / 1;
+    }
+
+    .category h3 {
+        font-size: 1.3rem;
     }
 
     .food-item {
